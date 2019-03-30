@@ -128,19 +128,9 @@ Vue.component('cart', {
         },
         itemsUpdate(cartItem){
             let find = this.basket.find(el => el.id_product === cartItem.id_product);
-            if(cartItem.quantity < 1) {
+            if(cartItem.quantity < 0) {
                 cartItem.quantity = -(cartItem.quantity);
-                //} else if(cartItem.quantity === 0)
-                // if(find) {
-                //     this.$parent.deleteJson(`/api/cart/${find.id_product}`, find)
-                //         .then(data => {
-                //             if (data.result === 1) {
-                //                 console.log('ok');
-                //                 this.basket.splice(this.basket.indexOf(cartItem), 1);
-                //             }
-                //         })
-                // }
-            }
+            } else if(cartItem.quantity === 0) {this.remove(cartItem)}
             else {
                 if (find) {
                     this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: find.quantity})
