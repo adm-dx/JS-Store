@@ -64,7 +64,7 @@ Vue.component('product', {
                  <button class="add-to-cart-link" @click="$root.$refs.dropcart.addProduct(product)"><img class="add-to-cart-svg-catalog" src="Img/cart.svg" alt="your cart">Add to cart</button>
                  <div class="refresh-like">
                      <a href="#" class="add-to-cart-refresh-link"><img src="Img/refresh.svg" alt="refresh"></a>
-                     <a href="#" class="add-to-cart-like-link"><img src="img/like.svg" alt="like"></a>
+                     <a href="#" class="add-to-cart-like-link"><img src="Img/like.svg" alt="like"></a>
                  </div>
              </div>
          </div>`
