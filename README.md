@@ -2,9 +2,9 @@
 Webstore HTML5 + CSS3 + Vue JS + Node JS
 
 To check how it works you need NodeJS installed in your system. Then follow 3 steps:
-cd <path to project>
-npm install //to install all dependencies
-npm start //to start node express server
+* cd <path to project>
+* npm install //to install all dependencies
+* npm start //to start node express server
   
 After that in case of no errors just open localhost:8080 at your browser.
 
